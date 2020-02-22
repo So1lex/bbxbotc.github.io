@@ -1,9 +1,11 @@
----
-layout: default
----
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
 <style type="text/css">
+body {
+	background-color: #1a1f3d;
+	color: white;
+	
+}
 .row {
 	display: flex;
 }
@@ -12,41 +14,63 @@ layout: default
 	flex: 50%;
 }
 
+hr {
+  color: #323b75;
+}
 .center {
 	text-align: center;
 }
+
+.description {
+	border: 1px solid #323b75;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.fixed-width {
+	margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+}
 </style>
-<div class="row">
-	<div class="column center">
-		<video width="400" height="225" controls>
-			<source src="./assets/video/intro.mp4" type="video/mp4">
-			Невозможно отобразить видео
-		</video>
-	</div>
-	<div class="column center">
+<body class="fixed-width">
+<h1 class="center"> The Whale World: Cataclysm </h1>
+<h2 class="center"> Игра о бравых ворах, волей случая спасённых из тюрьмы. Решивших спасти мир от грянувшего катаклизма. </h2>
+<div class="row fixed-width">
+	<video width="400" height="225" controls>
+		<source src="./assets/video/intro.mp4" type="video/mp4">
+		Невозможно отобразить видео
+	</video>
+
+	<div width="450" class="description">
 		<p>
-			Не самоё далёкое будущее. Власть на планете захватил ИИ. Города превращены в огромные заводы. Персонаж игрока появляется на автоматическом поезде, которые нужно перенаправить в сторону моря. 
+			Возглавьте шайку воров-волшебников, которые пытаются разобраться в причинах катаклизма обрушившегося на их город.
 		</p>
 		<p>
-			Команда: Олег Егоркин, Максим Гришечкин, Огнеслав Иванов.	
+			Команда: Вячеслав Спирин, Дмитрий Проданов, Захар Горяинов.	
 		</p>
 	</div>
 </div>
 <hr />
 <h3>Описание</h3>
 <p>
-	Игра представляет собой смесь <strong>бесконечного раннера</strong>, <strong>головоломки</strong> и графической новеллы. Каждый уровнь - это забег по крышам вагонов поезда, который сопровождается сбором <strong>"данных"</strong> для дальнейшго взлома локомотива. Взлом - это простая <strong>мини-игра</strong>, в которой нужно за ограниченное количество ходов подобрать правильную комбинацию символов - пароль. После успешного взлома сюжет продвигается с помощью текстовых <del>внутренних</del> диалогов.
+	Игра представляет собой <strong>3D платформер</strong> - <strong>головоломку</strong>. 
+	Проведите целую группу воров через опасные препятствия, используя уникальные способности каждого персонажа.
+	Узнайте что послужило причиной катаклизма, устраните причину и спасите мир!
 </p>
 <h3>Особенности</h3>
 <ul>
-	<li>Динамичный раннер с инновационным управлением. Доступно 4 уровня, каждый со своими особенными препятствиями;</li>
-	<li>Головоломки с нарастающей сложностью, как мы любим;</li>
-	<li>Короткая, но душевная история на 15 минут;</li>
+	<p> В вашем распоряжении 3 персонажа </p>
+	<li><strong>Hatman</strong> - молчаливый и скрытный. Предает своей шляпу любую форму и управляет ей на расстоянии.</li>
+	<li><strong>Snake Plissken</strong> - проворный и коварный. Проведёт слона мимо самого бдительно сторожа с помощью своего плаща.</li>
+	<li><strong>Splinter</strong> - внезапный и решительный. Не смотрите на него снизу вверх.</li>
+	
+	<p> У вас нет права на ошибку! Одно неверное движение - смерть. </p>
 </ul>
 <p class="center">
-	<img src="./assets/img/train_1.jpg" />
-	<img src="./assets/img/train_2.jpg" />
+	<video width="400" height="225" controls>
+		<source src="./assets/video/gameplay.mp4" type="video/mp4">
+		Невозможно отобразить видео
+	</video>
 </p>
-<h5>
-	Images are got from <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1605123037">here</a>.
-</h5>
+</body>
